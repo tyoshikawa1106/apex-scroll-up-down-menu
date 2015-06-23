@@ -1,0 +1,53 @@
+<apex:page >
+    <style type="text/css">
+        #menu-wrap {
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,.5);
+            transition: .3s;
+        }
+        #menu {
+            list-style-type: none;
+            width: 960px;
+            margin: 0px auto;
+            padding: 0;
+        }
+        #menu li {
+            width: 20%;
+            float: left;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #menu li a {
+            display: block;
+            width : 100%;
+            padding: 20px 0;
+            color: #fff;
+            font-size: 14px;
+            line-height: 1;
+            text-decoration: none;
+            transition: .3s;
+        }
+        #menu li a:hover {
+            background: rgba(0,0,0,.3);
+        }
+        
+        .menuSection {
+            margin-bottom: 54px;
+        }
+        .colorSection div {
+            height:500px;
+            font-size: 16px;
+        }
+        .colorWhite {
+            color: #FFFFFF;
+        }
+        .vfBody {
+            margin:0;
+        }
+    </style>
+</apex:page>

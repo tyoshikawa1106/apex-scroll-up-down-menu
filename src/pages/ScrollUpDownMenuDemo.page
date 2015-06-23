@@ -1,0 +1,72 @@
+<apex:page showHeader="false" standardStylesheets="false" applyBodyTag="false" docType="html-5.0" id="page">
+    <apex:includeScript value="https://code.jquery.com/jquery-2.1.4.min.js" />
+    <apex:include pageName="ScrollUpDownMenuDemoCss" />
+    <body class="vfBody">
+        <apex:form >
+            <section class="menuSection ">
+                <nav id="menu-wrap">
+                    <ul id="menu">
+                        <li>
+                            <a href="http://weboook.blog22.fc2.com/blog-entry-412.html" target="_blank">
+                                <apex:outputText value="Reference" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com/design/spec/style/color.html" target="_blank">
+                                <apex:outputText value="Color" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <apex:outputText value="menu1" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <apex:outputText value="menu2" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <apex:outputText value="menu3" />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="colorSection ">
+                <div style="background-color: #E8EAF6;">
+                    <apex:outputText value="#E8EAF6" />
+                </div>
+                <div style="background-color: #C5CAE9;">
+                    <apex:outputText value="#C5CAE9" />
+                </div>
+                <div style="background-color: #9FA8DA;">
+                    <apex:outputText value="#9FA8DA" />
+                </div>
+                <div style="background-color: #7986CB;">
+                    <apex:outputText value="#7986CB" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #5C6BC0;">
+                    <apex:outputText value="#5C6BC0" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #3F51B5;">
+                    <apex:outputText value="#3F51B5" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #3949AB;">
+                    <apex:outputText value="#3949AB" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #303F9F;">
+                    <apex:outputText value="#303F9F" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #283593;">
+                    <apex:outputText value="#283593" styleClass="colorWhite" />
+                </div>
+                <div style="background-color: #1A237E;">
+                    <apex:outputText value="#1A237E" styleClass="colorWhite" />
+                </div>
+            </section>
+        </apex:form>
+        <apex:include pageName="ScrollUpDownMenuDemoScript" />
+    </body>
+</apex:page>

@@ -1,0 +1,18 @@
+<apex:page >
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        var menuHeight = $j('#menu-wrap').height();
+        var startPos = 0;
+        $j(window).scroll(function() {
+            var currentPos = $j(this).scrollTop();
+            if (currentPos > startPos) {
+                if($j(window).scrollTop() >= 200) {
+                    $j("#menu-wrap").css("top", "-" + menuHeight + "px");
+                }
+            } else {
+                $j("#menu-wrap").css("top", 0 + "px");
+            }
+            startPos = currentPos;
+        });
+    </script>
+</apex:page>
